@@ -1,0 +1,38 @@
+.work {
+    padding-top: 0px;
+}
+
+.work__list {
+    display: flex;
+}
+
+.work__item {
+    position: relative;
+
+    z-index: -1;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.work__text-container {
+    position: absolute;
+
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.work__text {
+    display: flex;
+    justify-content: center;
+
+    color: var(--primary-text-color-theme-dark);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

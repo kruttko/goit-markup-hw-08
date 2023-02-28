@@ -1,0 +1,26 @@
+
+.team__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__title {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.20;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-light);
+}
+
+.team__desc {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.20;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-light);
+}

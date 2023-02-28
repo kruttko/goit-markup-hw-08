@@ -1,0 +1,30 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/reset';
+@import './base/container';
+@import './base/common';
+
+@import './components/logo';
+@import './components/contacts-link';
+@import './components/section-title';
+@import './components/modal';
+@import './components/form';
+@import './components/team-card';
+@import './components/socials';
+
+@import './layout/header';
+@import './layout/nav';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+
+
+
+@import './components/card';
+
+@import './layout/proj-filter';
+@import './layout/proj-list';

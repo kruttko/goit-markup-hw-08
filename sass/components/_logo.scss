@@ -1,0 +1,27 @@
+.logo {
+    display: inline-block;
+
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+
+
+    header & {
+        margin-right: 93px;
+    }
+
+    .footer & {
+        margin-bottom: 20px;
+    }
+}
+
+.logo-word {
+    color: var(--secondary-logo-color-header);
+}
+
+.logo-word--reverse {
+    color: var(--secondary-logo-color-footer);
+}

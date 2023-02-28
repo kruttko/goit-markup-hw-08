@@ -1,0 +1,27 @@
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+ul {
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.button {
+    border-width: 0px;
+
+    cursor: pointer;
+}
+
+h1, h2, h3, p {
+    margin: 0px;
+}
+
+address {
+    font-style: normal;
+}

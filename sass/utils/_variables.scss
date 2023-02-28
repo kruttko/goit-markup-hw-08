@@ -1,0 +1,33 @@
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+
+    --primary-text-color-theme-dark: #FFFFFF;
+    --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.6);
+    --primary-text-color-theme-light: #212121;
+    --secondary-text-color-theme-light: #757575;
+
+    --dark-background-section-color: #2F303A;
+    --light-background-section-color: #F5F4FA;
+    --white-background-section-color: #FFFFFF;
+    --accent-color: #2196F3;
+
+    --secondary-logo-color-header: #000000;
+    --secondary-logo-color-footer: #FFFFFF;
+
+    --button-background-color: #F5F4FA;
+    --button-text-color: #212121;
+    --button-text-hover-color: #FFFFFF;
+    --blue-button-hover-color: #188CE8;
+
+    --main-border-color: #ECECEC;
+    --card-border-color: #EEEEEE;
+
+    --icons-fill-light-background: #AFB1B8;
+    --icons-light-background:  #F5F4FA;
+    --icons-dark-background: rgba(255, 255, 255, 0.1);
+    --icons-fill-dark-background: #FFFFFF;
+
+    --transition-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --hover-overlay: rgba(33, 150, 243, 0.9);
+}
