@@ -1,5 +1,6 @@
-
 .header {
+    position: relative;
+
     border-bottom: 1px solid var(--main-border-color);
 }
 
@@ -10,9 +11,4 @@
 
 .header-contacts__item:not(:last-child) {
     margin-right: 40px;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
 }

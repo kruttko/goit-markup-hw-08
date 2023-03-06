@@ -18,33 +18,48 @@
         <!--лого-->
         <a class="logo link" href="#" lang="en">Web<span class="logo-word">Studio</span></a>
 
-        <!--навігація-->
-        <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-list__item"><a class="nav-list__link link nav-list__link--current" href="#">Студія</a></li>
-            <li class="nav-list__item"><a class="nav-list__link link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="nav-list__item"><a class="nav-list__link link" href="#">Контакти</a></li>
-          </ul>
-        </nav>
+        <!-- навігація для phone -->
+        <button class="menu-button is-open" data-menu-button
+          aria-expanded="false"
+          aria-controls="nav-container">
+          <svg class="menu-button__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="menu-button--open" href="./images/icons.svg#icon-menu"></use>
+            <use class="menu-button--close" href="./images/icons.svg#icon-closemenu"></use>
+          </svg>
+        </button>
 
-        <ul class="header-contacts list">
-          <li class="header-contacts__item">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contacts__item">
-            <a class="contacts-link link" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+
+        <!--навігація для tablet та desctop-->
+          <div class="nav-container is-open" data-menu id="nav-container">
+            <nav class="nav">
+              <ul class="nav-list list">
+                <li class="nav-list__item"><a class="nav-list__link link nav-list__link--current" href="#">Студія</a></li>
+                <li class="nav-list__item"><a class="nav-list__link link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="nav-list__item"><a class="nav-list__link link" href="#">Контакти</a></li>
+              </ul>
+            </nav>
+    
+            <ul class="header-contacts list">
+              <li class="header-contacts__item">
+                <a class="contacts-link link" href="mailto:info@devstudio.com">
+                  <svg class="contacts-icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contacts__item">
+                <a class="contacts-link link" href="tel:+380961111111">
+                  <svg class="contacts-icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
     </div>
     </header>
     <main class="main">
@@ -119,7 +134,7 @@
         </div>
       </section>
 
-      <!--секція Характеристики студії-->
+      <!--секція Характеристики студії
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Характеристики студії</h2>
@@ -174,9 +189,9 @@
           </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- секція Чим ми займаємося з картинками-->
+      <!-- секція Чим ми займаємося з картинками
       <section class="work section">
         <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
@@ -216,9 +231,9 @@
           </li>
         </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--секція Наша команда з фото-->
+      <!--секція Наша команда з фото
       <section class="team section">
         <div class="container">
         <h2 class="section-title">Наша команда</h2>
@@ -389,9 +404,9 @@
           </li>
         </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- секція Постійні клієнти -->
+      <!-- секція Постійні клієнти
       <section class="clients section">
         <div class="container">
           <h2 class="section-title" lang="uk">Постійні клієнти</h2>
@@ -440,11 +455,13 @@
             </li>
         </ul>
         </div>
-      </section>
-    </main>
+      </section>  -->
+    </main> 
 
     <footer class="footer">
+      <!-- footer
       <div class="container">
+
         <div class="footer-contacts__wrapper">
           <a class="logo link" href="#" lang="en">Web<span class="logo-word--reverse">Studio</span></a>
           <address class="address">
@@ -507,8 +524,10 @@
           </form>
         </div>
 
-      </div>
+      </div>   -->
+      
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -96,10 +96,12 @@
     justify-content: center;
 
     font-family: inherit;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-light);
+
+    // font-size: 14px;
 }
 
 .form__checkbox {

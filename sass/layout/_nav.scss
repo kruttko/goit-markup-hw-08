@@ -1,3 +1,46 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    border: none;
+    background-color: var(--white-background-section-color);
+
+    &:focus {
+        fill: var(--accent-color);
+    }
+    
+    &.is-open .menu-button--close {
+        display: block;
+    }
+    
+    &.is-open .menu-button--open {
+        display: none;
+    }
+}
+
+.menu-button--close {
+    display: none;
+}
+
+
+.nav-container {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-background-section-color);
+
+    &.is-open {
+        display: block; 
+    }
+}
+
 .nav-list {
     display: flex;
 }
