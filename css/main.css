@@ -479,14 +479,13 @@ header .logo {
 .menu-button:focus {
   fill: var(--accent-color);
 }
+.menu-button .menu-button--close {
+  display: none;
+}
 .menu-button.is-open .menu-button--close {
   display: block;
 }
 .menu-button.is-open .menu-button--open {
-  display: none;
-}
-
-.menu-button--close {
   display: none;
 }
 
@@ -497,6 +496,7 @@ header .logo {
   left: 0;
   width: 100%;
   background-color: var(--white-background-section-color);
+  border: solid 1px red;
 }
 .nav-container.is-open {
   display: block;
@@ -616,6 +616,10 @@ header .logo {
   }
 }
 
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .features__title {
   margin-bottom: 10px;
   text-align: center;
@@ -637,9 +641,6 @@ header .logo {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
-}
-.features__desc:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -667,6 +668,11 @@ header .logo {
 
 .work {
   padding-top: 0px;
+}
+@media screen and (max-width: 768px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__list {
@@ -805,9 +811,13 @@ header .logo {
   }
 }
 
+.footer-contacts__wrapper {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 1200px) {
   .footer-contacts__wrapper {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -834,6 +844,15 @@ header .logo {
   }
   .footer-contacts__item:nth-child(1) {
     margin-top: 9px;
+  }
+}
+
+.footer-socials__wrapper {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials__wrapper {
+    margin-bottom: 0;
   }
 }
 
@@ -881,11 +900,17 @@ header .logo {
 
 /* subscription form */
 .footer-subscription__wrapper {
-  position: relative;
-  margin-left: 10%;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription__wrapper {
+    position: relative;
+    margin-left: 10%;
+  }
 }
 
 .footer-subscription__text {
+  margin-bottom: 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -894,19 +919,27 @@ header .logo {
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
 }
+@media screen and (min-width: 1200px) {
+  .footer-subscription__text {
+    margin-bottom: auto;
+  }
+}
 
-.subscription__form {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscription__form {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: flex;
+    margin-bottom: auto;
+  }
 }
 
 .subscription__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px;
-  margin-right: 10px;
+  margin-bottom: 20px;
   color: #FFFFFF;
   font-family: inherit;
   font-size: 16px;
@@ -933,9 +966,15 @@ header .logo {
   outline: none;
   border: 1.5px solid var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 358px;
+    margin-right: 10px;
+    margin-bottom: auto;
+  }
+}
 
 .subscription__button {
-  display: flex;
   padding: 10px 28px;
   min-width: 200px;
   height: 50px;
@@ -957,7 +996,7 @@ header .logo {
 }
 
 .subscription__icon {
-  margin: auto auto 0px 10px;
+  display: inline-block;
 }
 
 .card {

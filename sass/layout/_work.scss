@@ -1,5 +1,9 @@
 .work {
     padding-top: 0px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .work__list {

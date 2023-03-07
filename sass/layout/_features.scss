@@ -1,9 +1,12 @@
 .features__list {
-
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+.features__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .features__title {
@@ -27,12 +30,6 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-light);
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
-// не відпрацьовує^^^^^^^^^^
 }
 
 .features__item {

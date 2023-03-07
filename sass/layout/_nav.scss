@@ -13,6 +13,10 @@
     &:focus {
         fill: var(--accent-color);
     }
+
+    & .menu-button--close {
+        display: none;
+    }
     
     &.is-open .menu-button--close {
         display: block;
@@ -23,18 +27,18 @@
     }
 }
 
-.menu-button--close {
-    display: none;
-}
-
 
 .nav-container {
     display: none; 
+
     position: absolute;
     top: 100%;
     left: 0;
+
     width: 100%;
+
     background-color: var(--white-background-section-color);
+    border: solid 1px red;
 
     &.is-open {
         display: block; 
