@@ -3,7 +3,14 @@
 }
 
 .team__list {
-    display: flex;
+    & img {
+        width: 450px;
+        height: 460px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .team__item {
@@ -12,8 +19,19 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.team__item img {
+    height: auto;
 }
 
 
