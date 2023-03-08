@@ -557,6 +557,14 @@ header .logo {
     background-image: url(../images/backgroundimg@2x.jpg);
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    width: auto;
+    height: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     width: auto;
@@ -613,6 +621,7 @@ header .logo {
   .features__list {
     display: flex;
     flex-wrap: wrap;
+    width: 354px;
   }
 }
 
@@ -717,6 +726,16 @@ header .logo {
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .team__list img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
   }
 }
 
@@ -727,6 +746,15 @@ header .logo {
 }
 .team__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__item:nth-child(2n+1) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .team__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {

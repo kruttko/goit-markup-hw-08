@@ -10,6 +10,16 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
+
+        & img {
+            width: 354px;
+            height: 374px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
     }
 }
 
@@ -20,6 +30,17 @@
 
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -33,5 +54,3 @@
 .team__item img {
     height: auto;
 }
-
-
