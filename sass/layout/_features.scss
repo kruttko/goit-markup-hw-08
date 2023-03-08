@@ -2,8 +2,6 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-
-        width: 354px;
     }
 }
 
@@ -22,7 +20,8 @@
     text-transform: uppercase;
     color: var(--primary-text-color-theme-light);
 
-    @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 768px) {
         text-align: start;
     }
 }
@@ -35,6 +34,13 @@
 }
 
 .features__item {
+    @media screen and (min-width: 768px) {
+        width: 354px;
+
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+    }
 
     @media screen and (min-width: 1200px) {
         width: 270px;

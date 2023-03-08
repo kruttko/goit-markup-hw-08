@@ -29,8 +29,6 @@
 
 
 .nav-container {
-    display: none; 
-
     position: absolute;
     top: 100%;
     left: 0;
@@ -42,6 +40,10 @@
 
     &.is-open {
         display: block; 
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none; 
     }
 }
 
