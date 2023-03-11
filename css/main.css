@@ -273,6 +273,7 @@ header .logo {
   padding-top: 95px;
   padding-left: 15px;
   padding-right: 15px;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--transition-animation), background-color var(--transition-animation);
@@ -280,11 +281,6 @@ header .logo {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-@media screen and (min-width: 768px) {
-  .backdrop {
-    overflow-y: scroll;
-  }
 }
 
 .modal {
