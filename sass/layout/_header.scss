@@ -4,11 +4,4 @@
     border-bottom: 1px solid var(--main-border-color);
 }
 
-.header-contacts {
-    display: flex;
-    margin-left: auto;
-}
 
-.header-contacts__item:not(:last-child) {
-    margin-right: 40px;
-}

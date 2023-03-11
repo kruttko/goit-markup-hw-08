@@ -11,6 +11,10 @@
 
     header & {
         margin-right: 93px;
+
+        @media screen and (max-width: 1999px) {
+            margin-right: 88px;
+        }
     }
 
     .footer & {

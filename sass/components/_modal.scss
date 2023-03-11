@@ -13,20 +13,22 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
 
-    overflow-y: scroll;
-
     transition: opacity var(--transition-animation), background-color var(--transition-animation);
 
     &.is-hidden {
         opacity: 0;
         pointer-events: none;
     }
+
+    @media screen and (min-width: 768px) {
+        overflow-y: scroll;
+    }
 }
 
 
 .modal {
     position: relative;
-    min-width: 450px;
+    width: 450px;
     padding: 40px;
 
     background-color: var(--white-background-section-color);
@@ -34,7 +36,18 @@
     border-radius: 4px;
 
     @media (min-width: 768px) {
-        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.9);
+
+        transition: transform var(--transition-animation);
+
+        .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    @media (min-width: 1200px) {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.9);
