@@ -606,8 +606,9 @@ header .logo {
   background-color: var(--white-background-section-color);
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: fill var(--transition-animation);
 }
-.menu-button:focus {
+.menu-button:focus, .menu-button:hover {
   fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
@@ -648,8 +649,9 @@ header .logo {
   top: 10px;
   background-color: transparent;
   border: none;
+  transition: fill var(--transition-animation);
 }
-.menu-button--mobile:focus {
+.menu-button--mobile:focus, .menu-button--mobile:hover {
   fill: var(--accent-color);
 }
 
