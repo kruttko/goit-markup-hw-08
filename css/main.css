@@ -756,6 +756,11 @@ header .logo {
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
 .features__title {
   margin-bottom: 10px;
