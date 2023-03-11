@@ -167,6 +167,41 @@ header .logo {
     margin-bottom: 0;
   }
 }
+.header-contacts--mobile {
+  margin-top: 15vh;
+}
+
+.header-contacts__item--mobile {
+  margin-bottom: 32px;
+}
+
+.menu-socials {
+  display: flex;
+  margin-top: 14vh;
+}
+.menu-socials__item:not(:last-child) {
+  margin-right: 20px;
+}
+.menu-socials__link {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.menu-socials__link.apart::after {
+  content: "";
+  position: absolute;
+  right: -11px;
+  bottom: 0;
+  display: block;
+  width: 1px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
 
 .contacts-link {
   display: flex;
@@ -180,6 +215,22 @@ header .logo {
 }
 .contacts-link:hover, .contacts-link:focus {
   color: var(--accent-color);
+}
+.contacts-link--phone {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.contacts-link--email {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .contacts-icon {
@@ -570,7 +621,7 @@ header .logo {
 }
 
 .nav--mobile {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -591,9 +642,6 @@ header .logo {
 
 .nav-container--mobile {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -625,19 +673,6 @@ header .logo {
   margin-bottom: 32px;
 }
 
-.header-contacts--mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: auto;
-  margin-bottom: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color-theme-light);
-}
-
 .hero {
   margin: auto;
   padding-top: 118px;
@@ -647,12 +682,9 @@ header .logo {
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundimg.jpg);
   background-size: 480px 400px;
+  background-position: center;
+  background-size: cover;
   background-color: #C4C4C4;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .box {
-    background-image: url(../images/backgroundimg@2x.jpg);
-  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -669,10 +701,14 @@ header .logo {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-size: cover;
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/backgroundimg@2x.jpg);
+  }
+}
 .hero__title {
   width: 360px;
   margin: 0 auto;

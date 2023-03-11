@@ -45,10 +45,10 @@
                       </li>
                     </ul>
                   </nav>
-                  
+
             <button class="menu-button button js-open-menu" type="button"
             aria-expanded="false"
-            aria-controls="mobile-menu">
+            aria-controls="nav-list--mobile">
               <svg class="menu-button__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
                 <use class="menu-button--open" href="./images/icons.svg#icon-menu"></use>
               </svg>
@@ -71,14 +71,29 @@
 
               <ul class="header-contacts--mobile list">
                 <li class="header-contacts__item--mobile">
-                  <a class="contacts-link--mobile link" href="mailto:info@devstudio.com">
-                    info@devstudio.com
+                  <a class="contacts-link--phone link" href="tel:+380961111111">
+                    +38 096 111 11 11
                   </a>
                 </li>
                 <li class="header-contacts__item--mobile">
-                  <a class="contacts-link--mobile link" href="tel:+380961111111">
-                    +38 096 111 11 11
+                  <a class="contacts-link--email link" href="mailto:info@devstudio.com">
+                    info@devstudio.com
                   </a>
+                </li>
+              </ul>
+
+              <ul class="menu-socials list">
+                <li class="menu-socials__item">
+                  <a href="#" class="menu-socials__link apart link">Instagram</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a href="#" class="menu-socials__link apart link">Twitter</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a href="#" class="menu-socials__link apart link">Facebook</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a href="#" class="menu-socials__link link">Linkedin</a>
                 </li>
               </ul>
             </div>
@@ -86,8 +101,6 @@
 
       </div>
     </header>
-
-
 
 
 
@@ -269,6 +282,7 @@
         <ul class="team__list list">
           <li class="team__item">
             <img
+              srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
               src="./images/igor.jpg"
               alt="Ігор Дем'яненко"
               width="270"
@@ -310,6 +324,7 @@
           </li>
           <li class="team__item">
             <img
+              srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
               src="./images/olga.jpg"
               alt="Ольга Рєпіна"
               width="270"
@@ -351,6 +366,7 @@
           </li>
           <li class="team__item">
             <img
+              srcset="./images/mykola.jpg 1x, ./images/mykola@2x.jpg 2x"
               src="./images/mykola.jpg"
               alt="Микола Тарасов"
               width="270"
@@ -392,6 +408,7 @@
           </li>
           <li class="team__item">
             <img
+              srcset="./images/michael.jpg 1x, ./images/michael@2x.jpg 2x"
               src="./images/michael.jpg"
               alt="Михайло Єрмаков"
               width="270"
