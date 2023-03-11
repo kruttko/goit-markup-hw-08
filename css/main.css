@@ -73,7 +73,7 @@ address {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -674,13 +674,17 @@ header .logo {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  width: 480px;
-  height: 400px;
+  width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundimg.jpg);
   background-size: 480px 400px;
   background-position: center;
   background-size: cover;
   background-color: #C4C4C4;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -924,8 +928,12 @@ header .logo {
 }
 
 .clients__item {
-  margin-right: 30px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    margin-right: 30px;
+  }
 }
 .clients__item:nth-child(2n) {
   margin-right: 0px;
@@ -935,8 +943,10 @@ header .logo {
     margin-right: 30px;
   }
 }
-.clients__item:nth-last-child(-n+2) {
-  margin-bottom: 0px;
+@media screen and (min-width: 480px) {
+  .clients__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__item:nth-child(3n) {

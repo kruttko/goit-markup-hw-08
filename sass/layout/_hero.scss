@@ -4,8 +4,7 @@
     padding-bottom: 118px;
     
     text-align: center;
-    width: 480px;
-    height: 400px;
+    width: 100%;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/backgroundimg.jpg);
     background-size: 480px 400px;
@@ -13,6 +12,10 @@
     background-size: cover;
 
     background-color: #C4C4C4;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;  
+    }
 
     @media screen and (min-width: 768px) {
         width: auto;
