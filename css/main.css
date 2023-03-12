@@ -883,10 +883,9 @@ header .logo {
 @media screen and (min-width: 1200px) {
   .team__list {
     display: flex;
-    justify-content: center;
   }
   .team__list img {
-    width: 250px;
+    width: 270px;
   }
 }
 

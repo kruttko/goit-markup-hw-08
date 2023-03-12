@@ -240,6 +240,7 @@
         <ul class="work__list list">
           <li class="work__item">
             <img
+              srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x"
               src="./images/work1.jpg"
               alt="людина друкую"
               width="370"
@@ -251,6 +252,7 @@
           </li>
           <li class="work__item">
             <img
+              srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x"
               src="./images/work2.jpg"
               alt="людина дзвонить"
               width="370"
@@ -262,6 +264,7 @@
           </li>
           <li class="work__item">
             <img
+              srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x"
               src="./images/work3.jpg"
               alt="людина з планшетом"
               width="370"
@@ -281,12 +284,18 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__item">
-            <img
-              srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
-              src="./images/igor.jpg"
+            <picture>
+              <source srcset="./images/igor-270.jpg 1x, ./images/igor-270@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/igor-354.jpg 1x, ./images/igor-354@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/igor-450.jpg 1x, ./images/igor-450@2x.jpg 2x" media="(min-width: 480px)" />
+              
+              <img
+              src="./images/igor-450.jpg"
               alt="Ігор Дем'яненко"
               width="270"
             />
+            </picture>
+
             <div class="team__card">
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__desc" lang="en">Product Designer</p>
@@ -323,12 +332,18 @@
             </div>
           </li>
           <li class="team__item">
-            <img
-              srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
-              src="./images/olga.jpg"
+            <picture>
+              <source srcset="./images/olga-270.jpg 1x, ./images/olga-270@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/olga-354.jpg 1x, ./images/olga-354@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/olga-450.jpg 1x, ./images/olga-450@2x.jpg 2x" media="(min-width: 480px)" />
+
+              <img
+              src="./images/olga-450.jpg"
               alt="Ольга Рєпіна"
               width="270"
             />
+            </picture>
+            
             <div class="team__card">
               <h3 class="team__title">Ольга Рєпіна</h3>
               <p class="team__desc" lang="en">Frontend Developer</p>
@@ -365,12 +380,18 @@
             </div>
           </li>
           <li class="team__item">
-            <img
-              srcset="./images/mykola.jpg 1x, ./images/mykola@2x.jpg 2x"
-              src="./images/mykola.jpg"
+            <picture>
+              <source srcset="./images/mykola-270.jpg 1x, ./images/mykola-270@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/mykola-354.jpg 1x, ./images/mykola-354@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/mykola-450.jpg 1x, ./images/mykola-450@2x.jpg 2x" media="(min-width: 480px)" />
+
+              <img
+              src="./images/mykola-450.jpg"
               alt="Микола Тарасов"
               width="270"
             />
+            </picture>
+
             <div class="team__card">
               <h3 class="team__title">Микола Тарасов</h3>
               <p class="team__desc" lang="en">Marketing</p>
@@ -407,12 +428,18 @@
             </div>
           </li>
           <li class="team__item">
-            <img
-              srcset="./images/michael.jpg 1x, ./images/michael@2x.jpg 2x"
-              src="./images/michael.jpg"
+            <picture>
+              <source srcset="./images/michael-270.jpg 1x, ./images/michael-270@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/michael-354.jpg 1x, ./images/michael-354@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/michael-450.jpg 1x, ./images/michael-450@2x.jpg 2x" media="(min-width: 480px)" />
+
+              <img
+              src="./images/michael-450.jpg"
               alt="Михайло Єрмаков"
               width="270"
             />
+            </picture>
+            
             <div class="team__card">
               <h3 class="team__title">Михайло Єрмаков</h3>
               <p class="team__desc" lang="en">UI Designer</p>
